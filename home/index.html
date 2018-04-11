@@ -14,17 +14,7 @@
 </head>
 
 <body>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
-    <div class="row bg-dark header__background header"></div>
-    <div class="container">
+    <section>
         <div class="row bg-dark header">
             <div class=col-7></div>
             <div class=col-5>
@@ -39,27 +29,71 @@
                 </span>
             </div>
         </div>
+    </section>
+    <div class="container">
         <nav class="navbar navbar-light navbar-expand-lg">
             <div class="navbar-brand">
                 <img src="img/header-logo.png" alt="LOGO">
             </div>
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler">
+                <span class=navbar-toggler-icon data-toggle=collapse data-target="#navMenu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id=navMenu>
                 <ul class="navbar-nav  ml-auto">
-                    <li class='nav-item'><a href="#" class='nav-link header__url'>Home</a></li>
-                    <li class='nav-item'><a href="#" class='nav-link header__url'>About us</a></li>
-                    <li class='nav-item'><a href="#" class='nav-link header__url'>Industry</a></li>
-                    <li class='nav-item'><a href="#" class='nav-link header__url'>Services</a></li>
-                    <li class='nav-item'><a href="#" class='nav-link header__url'>Pages</a></li>
-                    <li class='nav-item'><a href="#" class='nav-link header__url'>Contact us</a></li>
+                    <li class='nav-item'>
+                        <a href="#" class='nav-link header__url'>Home</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href="#" class='nav-link header__url'>About us</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href="#" class='nav-link header__url'>Industry</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href="#" class='nav-link header__url'>Services</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href="#" class='nav-link header__url'>Pages</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a href="#" class='nav-link header__url'>Contact us</a>
+                    </li>
                 </ul>
             </div>
-            <!-- <a href="#" class='nav-item header__link'></a>
-            <a href="#" class='nav-item header__link'>Industry</a>
-            <a href="#" class='nav-item header__link'>Services</a>
-            <a href="#" class='nav-item header__link'>Pages</a>
-            <a href="#" class='nav-item header__link'>Contact us</a> -->
         </nav>
     </div>
+    <section class="header__block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="header__box_wrapper">
+                        <div class="header__box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row about-us">
+            <div class="col-6">
+                <div class="about-us__wrapper d-flex align-items-center flex-column">
+                    <div class=about-us_title>What we are</div>
+                    <div class=about-us_description>About Us</div>
+                    <div class="about-us__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</div>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+            <div class="col-6"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
