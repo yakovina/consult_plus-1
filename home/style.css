@@ -6,6 +6,7 @@ body {
 :root {
 --grey-text-color: #898e8f;
 --green-color: #16d428;
+--orange-color: #ffac55;
 }
 
 .header {
@@ -25,7 +26,7 @@ body {
 }
 
 a.header__url:hover {
-  color: #ffac55 !important;
+  color: var(--orange-color)!important;
 }
 
 .header__block {
@@ -71,12 +72,16 @@ a.header__url:hover {
 .about-us__text {
     color: var(--grey-text-color);
 }
-.about-us__button {
+.success__button {
     background-color: var(--green-color);
     height: 45px;
     width: 135px;
     border-radius: 25px;
-    font-size: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.label {
+    border: 1px solid
 }
 
 img {
@@ -101,17 +106,17 @@ img {
     background-color: #e7eff1;
 }
 
-.steps-title {
+.section-title {
     text-transform: uppercase;
     line-height: 20px;
     margin-top: 110px;
     margin-bottom: 25px;
 }
 
-.steps-title > span:nth-of-type(1){
+.section-title > span:nth-of-type(1){
     color: var(--grey-text-color);
 }
-.steps-title > span:nth-of-type(2){
+.section-title > span:nth-of-type(2){
     font-weight: 700;
     font-size: 20px;
 }
@@ -137,4 +142,25 @@ img {
 
 .step__text {
     color: var(--grey-text-color);
+}
+
+.projects {
+    height: 700px;
+}
+.label{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    border: 2px solid var(--orange-color);
+    border-radius: 105px;
+    line-height: 20px;
+    padding: 5px 25px 5px 25px;
+    margin: 15px 0 0 15px;
+    text-transform: uppercase;
+}
+
+.plus-sign{
+    display: inline-block;
+    position: absolute;
+    
 }
