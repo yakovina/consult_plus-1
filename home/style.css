@@ -7,6 +7,7 @@ body {
 --grey-text-color: #898e8f;
 --green-color: #16d428;
 --orange-color: #ffac55;
+--blue-color: #03b6e7;
 }
 
 .header {
@@ -80,11 +81,15 @@ a.header__url:hover {
     font-size: 14px;
     text-transform: uppercase;
 }
+.projects .success__button {
+    border: red solid 3px;
+}
+
 .label {
     border: 1px solid
 }
 
-img {
+.image_max_size {
     width: 100%;
     height: 100%;
 }
@@ -162,5 +167,43 @@ img {
 .plus-sign{
     display: inline-block;
     position: absolute;
-    
 }
+.projects_top {
+    height: 50%;
+}
+
+.bg-orange{
+    background-color: var(--orange-color);
+}
+
+.project-block {
+    height: 233px;
+    width: 266px; 
+    margin-right: 25px;
+}
+
+
+.testimonials {
+    background-color: var(--blue-color);
+    min-height: 500px;
+}
+
+
+.testimonials {
+    color: white;
+}
+
+.quote_author {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    max-height: 80px;
+}
+.avatar_wrapper > img{
+    border-radius: 50%;
+}
+.avatar_wrapper {
+    max-height: 75px;
+    max-width: 75px;
+}
+

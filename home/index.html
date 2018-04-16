@@ -33,7 +33,7 @@
     <div class="container">
         <nav class="navbar navbar-light navbar-expand-lg">
             <div class="navbar-brand">
-                <img src="img/header-logo.png" alt="LOGO">
+                <img class=image_max_size src="img/header-logo.png" alt="LOGO">
             </div>
             <button class="navbar-toggler">
                 <span class=navbar-toggler-icon data-toggle=collapse data-target="#navMenu"></span>
@@ -86,10 +86,10 @@
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center flex-column">
                 <div class="about-us__image_wrapper">
-                    <img src="img/about_us_image.png" alt="about us image">
+                    <img class=image_max_size src="img/about_us_image.png" alt="about us image">
                 </div>
                 <div class="about-us__medal_wrapper">
-                    <img src="img/about_us_medal.png" alt="about us medal">
+                    <img class=image_max_size src="img/about_us_medal.png" alt="about us medal">
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@
             <div class="row">
                 <div class="col-4">
                     <div class="step__image">
-                        <img src="img/step_1.png" alt="step_1">
+                        <img class=image_max_size src="img/step_1.png" alt="step_1">
                     </div>
                     <div class="step__number">01</div>
                     <div class="step__title">Choose your industry</div>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="col-4">
                     <div class="step__image">
-                        <img src="img/step_2.png" alt="step_1">
+                        <img class=image_max_size src="img/step_2.png" alt="step_1">
                     </div>
                     <div class="step__number">02</div>
                     <div class="step__title">Choose your service</div>
@@ -123,7 +123,7 @@
                 </div>
                 <div class="col-4">
                     <div class="step__image">
-                        <img src="img/step_3.png" alt="step_1">
+                        <img class=image_max_size src="img/step_3.png" alt="step_1">
                     </div>
                     <div class="step__number">03</div>
                     <div class="step__title">Boost your business</div>
@@ -132,7 +132,7 @@
             </div>
         </div>
     </section>
-    <section class="projects bg-white">
+    <section class="projects">
         <div class="container">
             <div class="row">
                 <div class="col-1">
@@ -143,10 +143,36 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 d-flex">
                     <div class="label">Banking</div>
+                    <div class="plus-sign align-self-end">
+                        <img src="img/blue-plus.png" alt="+">
+                    </div>
                     <img src="img/grandpa.png" alt="grandpa">
-                    <div class="plus-sign"><img src="img/blue-plus.png" alt="+"></div>
+                </div>
+                <div class="col-6 d-flex flex-wrap">
+                    <div class='d-flex projects_top'>
+                        <div class="bg-orange d-flex project-block">
+                            <div class="label">Technology</div>
+                            <div class="plus-sign align-self-end">
+                                <img src="img/orange-plus.png" alt="+">
+                            </div>
+                        </div>
+                        <div class="d-flex project-block">
+                            <div class="label">Technology</div>
+                            <div class="plus-sign align-self-end">
+                                <img src="img/blue-plus.png" alt="+">
+                            </div>
+                            <img src="img/table.png" alt="table">
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="label">Real estate</div>
+                        <div class="plus-sign align-self-end">
+                            <img src="img/blue-plus.png" alt="+">
+                        </div>
+                        <img src="img/city.png" alt="city">
+                    </div>
                 </div>
             </div>
             <div class="row d-flex justify-content-center align-items-center">
@@ -154,7 +180,42 @@
             </div>
         </div>
     </section>
-
+    <section class=testimonials>
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <div class="section-title bg-blue">
+                        <span>Happy Clients</span>
+                        <span>testimonials</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <img src="img/start_quote.png" alt="quote">
+                </div>
+                <div class="col-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                    it to make a type speci book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially. unchanged.
+                </div>
+                <div class="col-1">
+                    <img src="img/end_quote.png" alt="quote">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 quote_author align-items-center d-flex">
+                    <div class=avatar_wrapper>
+                        <img src="img/man_photo.png" alt="the man">
+                    </div>
+                    <div>
+                            <span class=quote_author__client-name>Client Name</span>
+                            <span class=quote_author__client-designation>Designation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- bootstrap scripts -->
