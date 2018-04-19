@@ -8,6 +8,7 @@ body {
 --green-color: #16d428;
 --orange-color: #ffac55;
 --blue-color: #03b6e7;
+--blue-color-hover: #00a6d3;
 }
 
 .header {
@@ -38,15 +39,54 @@ a.header__url:hover {
   background-position: 0 15%;
   background-size: cover;
 }
-.header__box {
+.header-box {
+    position: absolute;
+    bottom: 0;
     width: 500px;
-    height: 600px;
-    background-color: red
+    height: 512px;
+    text-transform: uppercase;
 }
-.header__box_wrapper {
-    display: flex;
+.header-box_wrapper {
+    position: relative;
     height: 700px;
-    align-items: flex-end;
+}
+
+.header-box_heading {
+    height: 128px;
+    background-color: var(--orange-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.header-box_heading div:nth-child(1){
+    color:white;
+    font-size: 12px;
+    font-weight: 400;
+}
+.header-box_heading div:nth-child(2){
+    color:white;
+    font-size: 25px;
+    font-weight: 100;
+}
+.header-box_item {
+    display: flex;
+    height: 128px;
+    background-color: var(--blue-color);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    border: solid 1px var(--blue-color-hover);
+}
+
+.header-box_item:hover{
+    background-color: var(--blue-color-hover);
+}
+
+.arrow{
+    align-self: flex-end;
 }
 
 .about-us {
