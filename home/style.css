@@ -20,6 +20,8 @@ body {
   color: white;
   font-size: 12px;
   text-transform: uppercase;
+  min-width: 220px;
+  display: inline-block;
 }
 
 .header__contacts__description {
@@ -121,13 +123,7 @@ a.header__url:hover {
     font-size: 14px;
     text-transform: uppercase;
 }
-.projects .success__button {
-    border: red solid 3px;
-}
 
-.label {
-    border: 1px solid
-}
 
 .image_max_size {
     width: 100%;
@@ -190,7 +186,7 @@ a.header__url:hover {
 }
 
 .projects {
-    height: 700px;
+    height: 800px;
 }
 .label{
     display: inline-block;
@@ -220,6 +216,12 @@ a.header__url:hover {
     height: 233px;
     width: 266px; 
     margin-right: 25px;
+}
+
+.projects__button-wrapper{
+    display: block;
+    position: relative;
+    height: 150px;
 }
 
 

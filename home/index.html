@@ -18,15 +18,18 @@
         <div class="row bg-dark header">
             <div class=col-7></div>
             <div class=col-5>
-                <span class="header__contacts">
+                <div class="header__contacts col-2">
                     <b>Email : </b>
-                    <span class="header__contacts__description">info@consultplus.com</span>
+                    <span class="header__contacts__description ">info@consultplus.com</span>
+                </div>
+                <span class="col1">
+                    <!-- TODO add vertical line -->
                 </span>
-                <!-- TODO add vertical line -->
-                <span class="header__contacts">
+
+                <div class="header__contacts col-2">
                     <b>Phone : </b>
                     <span class="header__contacts__description">+91 5685 6664 555</span>
-                </span>
+                </div>
             </div>
         </div>
     </section>
@@ -41,7 +44,7 @@
             <div class="collapse navbar-collapse" id=navMenu>
                 <ul class="navbar-nav  ml-auto">
                     <li class='nav-item'>
-                        <a href="#" class='nav-link header__url'>Home</a>
+                        <a href="#" class='nav-link header__url '>Home</a>
                     </li>
                     <li class='nav-item'>
                         <a href="#" class='nav-link header__url'>About us</a>
@@ -185,6 +188,7 @@
                     <img src="img/grandpa.png" alt="grandpa">
                 </div>
                 <div class="col-6 d-flex flex-wrap">
+                    <!-- TODO fix paddings between elements!!! -->
                     <div class='d-flex projects_top'>
                         <div class="bg-orange d-flex project-block">
                             <div class="label">Technology</div>
@@ -209,7 +213,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center align-items-center">
+            <div class="row d-flex justify-content-center align-items-center projects__button-wrapper">
                 <button class='btn-success success__button'>Full projects</button>
             </div>
         </div>
