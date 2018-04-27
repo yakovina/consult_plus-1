@@ -16,9 +16,9 @@
 <body>
     <section>
         <div class="row bg-dark header">
-            <div class=col-7></div>
-            <div class=col-5>
-                <div class="header__contacts col-2">
+            <div class='col-lg-7 col-sm-5'></div>
+            <div class='col-lg-5 col-sm-6'>
+                <div class="header__contacts">
                     <b>Email : </b>
                     <span class="header__contacts__description ">info@consultplus.com</span>
                 </div>
@@ -26,7 +26,7 @@
                     <!-- TODO add vertical line -->
                 </span>
 
-                <div class="header__contacts col-2">
+                <div class="header__contacts">
                     <b>Phone : </b>
                     <span class="header__contacts__description">+91 5685 6664 555</span>
                 </div>
@@ -34,7 +34,7 @@
         </div>
     </section>
     <div class="container">
-        <nav class="navbar navbar-light navbar-expand-lg">
+        <nav class="navbar navbar-light navbar-expand-md">
             <div class="navbar-brand">
                 <img class=image_max_size src="img/header-logo.png" alt="LOGO">
             </div>
@@ -75,32 +75,32 @@
                             <div>We are leading consulting company</div>
                             <div>Choose your industry</div>
                         </div>
-                        <div class="header-box_item col-lg-6">
+                        <div class="header-box_item col-6">
                             <img src="img/education.png" alt="education">
                             <div>Education</div>
                             <img class=arrow src="img/arrow.png" alt="arrow">
                         </div>
-                        <div class="header-box_item col-lg-6">
+                        <div class="header-box_item col-6">
                             <img src="img/business.png" alt="business">
                             <div>Business</div>
                             <img class=arrow src="img/arrow.png" alt="arrow">
                         </div>
-                        <div class="header-box_item col-lg-6">
+                        <div class="header-box_item col-6">
                             <img src="img/technology.png" alt="technology">
                             <div>Technology</div>
                             <img class=arrow src="img/arrow.png" alt="arrow">
                         </div>
-                        <div class="header-box_item col-lg-6">
+                        <div class="header-box_item col-6">
                             <img src="img/real_estate.png" alt="real estate">
                             <div>Real Estate</div>
                             <img class=arrow src="img/arrow.png" alt="arrow">
                         </div>
-                        <div class="header-box_item col-lg-6">
+                        <div class="header-box_item col-6">
                             <img src="img/banking.png" alt="banking">
                             <div>Banking</div>
                             <img class=arrow src="img/arrow.png" alt="arrow">
                         </div>
-                        <div class="header-box_item col-lg-6">
+                        <div class="header-box_item col-6">
                             <button class='btn-success success__button'>View more</button>
 
                         </div>
@@ -113,7 +113,7 @@
     <section class=section>
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="about-us__wrapper d-flex align-items-end flex-column justify-content-center">
                         <div>
                             <div class="section-description">What we are</div>
@@ -125,7 +125,7 @@
                         <button class='btn-success success__button'>Read more</button>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-center align-items-center flex-column">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
                     <div class="about-us__image_wrapper">
                         <img class=image_max_size src="img/about_us_image.png" alt="about us image">
                     </div>
@@ -145,7 +145,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="step__image">
                         <img class=image_max_size src="img/step_1.png" alt="step_1">
                     </div>
@@ -153,7 +153,7 @@
                     <div class="step__title">Choose your industry</div>
                     <div class="step__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="step__image">
                         <img class=image_max_size src="img/step_2.png" alt="step_1">
                     </div>
@@ -161,7 +161,7 @@
                     <div class="step__title">Choose your service</div>
                     <div class="step__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <div class="step__image">
                         <img class=image_max_size src="img/step_3.png" alt="step_1">
                     </div>
@@ -173,6 +173,7 @@
         </div>
     </section>
     <section class="projects section">
+        <!-- TODO make better responsiveness -->
         <div class="container">
             <div class="row">
                 <div>
@@ -181,37 +182,40 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 d-flex">
-                    <div class="label">Banking</div>
-                    <div class="plus-sign align-self-end">
-                        <img src="img/blue-plus.png" alt="+">
-                    </div>
-                    <img src="img/grandpa.png" alt="grandpa">
-                </div>
-                <div class="col-6 flex-row flex-wrap">
-                    <!-- TODO fix paddings between elements!!! -->
-
+                <div class="col-lg-6">
                     <div class="d-flex project-block">
-                        <div class="label">Technology</div>
-                        <div class="plus-sign align-self-end">
-                            <img src="img/orange-plus.png" alt="+">
-                        </div>
-                        <img src="img/orange_project.png" alt="table">
-                    </div>
-                    <div class="d-flex project-block col-6">
-                        <div class="label">Technology</div>
+                        <div class="label">Banking</div>
                         <div class="plus-sign align-self-end">
                             <img src="img/blue-plus.png" alt="+">
                         </div>
-                        <img src="img/table.png" alt="table">
+                        <img src="img/grandpa.png" alt="grandpa">
                     </div>
-
-                    <div class="d-flex">
-                        <div class="label">Real estate</div>
-                        <div class="plus-sign align-self-end">
-                            <img src="img/blue-plus.png" alt="+">
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-between">
+                    <div class="row">
+                        <div class="d-flex col-6 project-block">
+                            <div class="label">Technology</div>
+                            <div class="plus-sign align-self-end">
+                                <img src="img/orange-plus.png" alt="+">
+                            </div>
+                            <img src="img/orange_project.png" alt="table">
                         </div>
-                        <img src="img/city.png" alt="city">
+                        <div class="d-flex col-6 project-block col-6">
+                            <div class="label">Technology</div>
+                            <div class="plus-sign align-self-end">
+                                <img src="img/blue-plus.png" alt="+">
+                            </div>
+                            <img src="img/table.png" alt="table">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex col-12 project-block">
+                            <div class="label">Real estate</div>
+                            <div class="plus-sign align-self-end">
+                                <img src="img/blue-plus.png" alt="+">
+                            </div>
+                            <img src="img/city.png" alt="city">
+                        </div>
                     </div>
 
                 </div>
@@ -232,15 +236,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-1">
+                <div class="col-lg-1">
                     <img src="img/start_quote.png" alt="quote">
                 </div>
-                <div class="col-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                <div class="col-lg-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
                     it to make a type speci book. It has survived not only five centuries, but also the leap into electronic
                     typesetting, remaining essentially. unchanged.
                 </div>
-                <div class="col-1">
+                <div class="col-lg-1">
                     <img src="img/end_quote.png" alt="quote">
                 </div>
             </div>
@@ -259,7 +263,7 @@
         </div>
     </section>
     <section class='blog section bg-grey'>
-        <!-- TODO delete rows from section titles -->
+        <!-- TODO add photo of dude in better way and make section responsive-->
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -310,7 +314,7 @@
 
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="contact__item">
                         <img src="img/mail.png" alt="email">
                         <div>
@@ -319,7 +323,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="contact__item">
                         <img src="img/phone.png" alt="phone">
                         <div>
@@ -328,7 +332,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="contact__item">
                         <img src="img/career.png" alt="career">
                         <div>
@@ -343,17 +347,18 @@
     <section class="footer section">
         <div class="container">
             <div class="row">
-                <div class="col-6 footer__subscription">
+                <div class="col-lg-6 footer__subscription">
                     <div>
                         <div class='section-title'>News letter</div>
                         <div class="section-description">Enter your email address to subscribe our notification of our new post & features by email.</div>
                     </div>
                     <div class=input__wrapper>
                         <input type="text" placeholder="email">
+                        <!-- TODO fix empty space on mobile -->
                         <button class='btn-success success__button input__button'>Subscribe</button>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="row">
                         <div class="col-4 footer-column">
                             <div class="column__title">Navigation</div>
@@ -436,10 +441,6 @@
         </div>
 
     </section>
-
-
-
-
 
     <!-- bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
