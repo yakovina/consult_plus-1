@@ -132,7 +132,6 @@ a.header__url:hover {
   color: var(--grey-text-color);
   font-size: 10px;
   text-transform: uppercase;
-  /* max-width: 200px; */
   display: inline-block;
 }
 
@@ -140,6 +139,7 @@ a.header__url:hover {
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 .step__image {
@@ -204,6 +204,11 @@ a.header__url:hover {
 .testimonials {
   color: white;
 }
+.testimonials  .section-description{
+  color: white;
+}
+
+
 
 .quote_author {
   display: inline-block;
@@ -296,7 +301,7 @@ a.posts_button:hover {
 
 .input__button {
   position: absolute;
-  right: 60px;
+  right: 105px;
 }
 
 .column__items {
@@ -319,3 +324,4 @@ a.posts_button:hover {
 .copyright {
     font-size: 12px;
 }
+

@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <link rel="stylesheet" href="style.css">
     <title>Consult Plus</title>
 </head>
@@ -23,7 +25,6 @@
                     <span class="header__contacts__description ">info@consultplus.com</span>
                 </div>
                 <span class="col1">
-                    <!-- TODO add vertical line -->
                 </span>
 
                 <div class="header__contacts">
@@ -47,7 +48,7 @@
                         <a href="#" class='nav-link header__url '>Home</a>
                     </li>
                     <li class='nav-item'>
-                        <a href="#" class='nav-link header__url'>About us</a>
+                        <a href="#about-us" class='nav-link header__url'>About us</a>
                     </li>
                     <li class='nav-item'>
                         <a href="#" class='nav-link header__url'>Industry</a>
@@ -59,7 +60,7 @@
                         <a href="#" class='nav-link header__url'>Pages</a>
                     </li>
                     <li class='nav-item'>
-                        <a href="#" class='nav-link header__url'>Contact us</a>
+                        <a href="#contact-us" class='nav-link header__url'>Contact us</a>
                     </li>
                 </ul>
             </div>
@@ -110,7 +111,7 @@
         </div>
         </div>
     </section>
-    <section class=section>
+    <section class=section id=about-us>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -173,7 +174,6 @@
         </div>
     </section>
     <section class="projects section">
-        <!-- TODO make better responsiveness -->
         <div class="container">
             <div class="row">
                 <div>
@@ -235,30 +235,60 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-lg-1">
                     <img src="img/start_quote.png" alt="quote">
                 </div>
-                <div class="col-lg-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                    it to make a type speci book. It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially. unchanged.
+                <div class="testimonials__carousel col-lg-10">
+                    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it to make a type speci book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting, remaining essentially. unchanged.
+                    </div>
+                    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it to make a type speci book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting, remaining essentially. unchanged.
+                    </div>
+                    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it to make a type speci book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting, remaining essentially. unchanged.
+                    </div>
                 </div>
                 <div class="col-lg-1">
                     <img src="img/end_quote.png" alt="quote">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-2 quote_author align-items-center d-flex">
+            <div class="row testimonials__carousel_nav col-lg-3 col-md-4 col-sm-6">
+                <div class="quote_author align-items-center d-flex justify-content-between">
                     <div class=avatar_wrapper>
                         <img src="img/man_photo.png" alt="the man">
                     </div>
                     <div>
-                        <span class=quote_author__client-name>Client Name</span>
-                        <span class=quote_author__client-designation>Designation</span>
+                        <div class=quote_author__client-name>Client Name</div>
+                        <div class=quote_author__client-designation>Designation</div>
                     </div>
                 </div>
-                <!-- TODO add here slick carousel -->
+                <div class="quote_author align-items-center d-flex justify-content-between">
+                    <div class=avatar_wrapper>
+                        <img src="img/girl1_photo.png" alt="the man">
+                    </div>
+                    <div>
+                        <div class=quote_author__client-name>Client Name</div>
+                        <div class=quote_author__client-designation>Designation</div>
+                    </div>
+                </div>
+                <div class="quote_author align-items-center d-flex justify-content-between">
+                    <div class=avatar_wrapper>
+                        <img src="img/girl2_photo.png" alt="the man">
+                    </div>
+                    <div>
+                        <div class=quote_author__client-name>Client Name</div>
+                        <div class=quote_author__client-designation>Designation</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -304,7 +334,7 @@
             </div>
         </div>
     </section>
-    <section class='contact-us section'>
+    <section class='contact-us section' id=contact-us>
         <div class="container">
             <div class="row">
                 <div>
@@ -354,7 +384,6 @@
                     </div>
                     <div class=input__wrapper>
                         <input type="text" placeholder="email">
-                        <!-- TODO fix empty space on mobile -->
                         <button class='btn-success success__button input__button'>Subscribe</button>
                     </div>
                 </div>
@@ -363,7 +392,6 @@
                         <div class="col-4 footer-column">
                             <div class="column__title">Navigation</div>
                             <ul class=column__items>
-                                <!-- TODO add anchors -->
                                 <li>
                                     <a href="#">Home</a>
                                 </li>
@@ -387,7 +415,6 @@
                         <div class="col-4 footer-column">
                             <div class="column__title">Industry</div>
                             <ul class=column__items>
-                                <!-- TODO add anchors -->
                                 <li>
                                     <a href="#">Education</a>
                                 </li>
@@ -414,7 +441,6 @@
                         <div class="col-4 footer-column">
                             <div class="column__title">Follow us</div>
                             <ul class=column__items>
-                                <!-- TODO add anchors -->
                                 <li>
                                     <a href="#">Facebook</a>
                                 </li>
@@ -442,6 +468,7 @@
 
     </section>
 
+
     <!-- bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -449,6 +476,13 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+
+    <!-- slick script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
