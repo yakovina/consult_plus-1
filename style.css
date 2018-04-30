@@ -2,6 +2,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 :root {
   --grey-text-color: #898e8f;
@@ -45,7 +46,7 @@ a.header__url:hover {
   width: 100%;
   left: 0;
   height: 100%;
-  content: '';
+  content: "";
   background-image: url("img/girl_with_laptop.png");
   background-repeat: no-repeat;
   background-position: 0 15%;
@@ -55,8 +56,8 @@ a.header__url:hover {
 }
 
 @media (max-width: 992px) {
-  .header__block:after{
-    opacity: 0.5 
+  .header__block:after {
+    opacity: 0.5;
   }
 }
 .header-box {
@@ -206,8 +207,8 @@ a.header__url:hover {
 }
 
 .project-block > img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .projects__button-wrapper {
@@ -223,11 +224,9 @@ a.header__url:hover {
 .testimonials {
   color: white;
 }
-.testimonials  .section-description{
+.testimonials .section-description {
   color: white;
 }
-
-
 
 .quote_author {
   display: inline-block;
@@ -272,7 +271,7 @@ a.posts_button:hover {
 }
 
 .blog:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -357,6 +356,5 @@ a.posts_button:hover {
 }
 
 .copyright {
-    font-size: 12px;
+  font-size: 12px;
 }
-
