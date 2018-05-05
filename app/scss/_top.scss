@@ -21,6 +21,7 @@
   }
 }
 .industry-box {
+  max-width: 540px;
   position: absolute;
   bottom: 0;
   display: block;
@@ -39,11 +40,11 @@
   transition: color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-.industry-box__item > div {
+.industry-box__item > span {
   width: 90%;
 }
 
-.industry-box__item > div::after {
+.industry-box__item > span:not(.button__green)::after {
   content: "";
   background-image: url("../img/arrow.png");
   width: 25px;
@@ -60,6 +61,7 @@
 }
 
 .industry-box__heading {
+  padding: 25px;
   background-color: $orange-color;
   display: flex;
   justify-content: center;
