@@ -1,13 +1,13 @@
 var gulp = require("gulp"),
   sass = require("gulp-sass"),
   imagemin = require("gulp-imagemin"),
-  imageminJpegRecompress = require("imagemin-jpeg-recompress"),
   del = require("del"),
   runSequence = require("run-sequence"),
   rename = require("gulp-rename"),
   cssnano = require("gulp-cssnano"),
   htmlmin = require("gulp-htmlmin"),
   uglify = require("gulp-uglify"),
+  tinypng = require("gulp-tinypng"),
   autoprefixer = require("gulp-autoprefixer");
 
 gulp.task("styles", function() {
@@ -30,22 +30,8 @@ gulp.task("html", function() {
 
 gulp.task("images", function() {
   return gulp
-    .src("app/img/**/*.+(png|jpg|gif|svg)")
-    .pipe(
-      imagemin(
-        [
-          imagemin.gifsicle({ interlaced: true }),
-          imageminJpegRecompress({
-            progressive: true,
-            method: "smallfry",
-            quality: "veryhigh"
-          }),
-          imagemin.optipng(),
-          imagemin.svgo({ plugins: [{ cleanupIDs: false }] })
-        ],
-        { verbose: true }
-      )
-    )
+    .src("./src/images/*")
+    .pipe(tinypng("RyRnHifHneWlxM6gJE6Ffgc8QLwWKPFt"))
     .pipe(gulp.dest("dist/img"));
 });
 
