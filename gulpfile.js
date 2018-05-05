@@ -30,7 +30,7 @@ gulp.task("html", function() {
 
 gulp.task("images", function() {
   return gulp
-    .src("./src/images/*")
+    .src("app/img/*")
     .pipe(tinypng("RyRnHifHneWlxM6gJE6Ffgc8QLwWKPFt"))
     .pipe(gulp.dest("dist/img"));
 });
