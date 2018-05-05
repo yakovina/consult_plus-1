@@ -1,0 +1,40 @@
+@import "colors";
+
+header {
+  // align-items: center;
+  .header__contacts {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 11px 0;
+  }
+  .header__contacts:first-of-type {
+    margin-right: 9px;
+  }
+  .header__contacts:last-of-type {
+    margin-left: 10px;
+  }
+
+  .stick {
+    display: inline-block;
+    border-right: 1px solid #727779;
+    padding: 0;
+    height: 100%;
+    position: absolute;
+  }
+
+  .header__contacts__description {
+    color: #727779;
+    font-size: 10px;
+  }
+
+  a.header__url {
+    transition: color 0.2s ease;
+    padding: 45px 0;
+  }
+
+  a.header__url:hover {
+    color: $orange-color !important;
+  }
+}

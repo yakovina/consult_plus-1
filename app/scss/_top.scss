@@ -1,0 +1,84 @@
+.top::after {
+  content: "";
+  width: 100%;
+  height: calc(100vh - 170px);
+  background-image: url("../img/girl_with_laptop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+  position: absolute;
+}
+
+.top {
+  width: 100%;
+  height: calc(100vh - 170px);
+}
+
+@media (max-width: 992px) {
+  .top:after {
+    opacity: 0.5;
+  }
+}
+.industry-box {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  text-transform: uppercase;
+}
+
+.industry-box__item {
+  padding: 25px;
+  display: flex;
+  background-color: $blue-color;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: white;
+  border: solid 1px $blue-color-hover;
+  transition: color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.industry-box__item > div {
+  width: 90%;
+}
+
+.industry-box__item > div::after {
+  content: "";
+  background-image: url("../img/arrow.png");
+  width: 25px;
+  height: 25px;
+  float: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.industry-box__item:hover {
+  background-color: $blue-color-hover;
+  text-decoration: none;
+  color: white;
+}
+
+.industry-box__heading {
+  background-color: $orange-color;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border: none;
+}
+
+.industry-box__heading:hover {
+  background-color: $orange-color;
+}
+
+.industry-box__heading span:nth-child(1) {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+}
+.industry-box__heading span:nth-child(2) {
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+}
