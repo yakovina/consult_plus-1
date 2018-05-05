@@ -10,9 +10,14 @@
   font-weight: 700;
   text-transform: uppercase;
   align-self: center;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  text-decoration: none;
 }
 
 .button__green {
-  @extend .button; 
+  @extend .button;
   background-color: $green-color;
 }

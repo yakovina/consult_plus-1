@@ -13,7 +13,12 @@ div.wrapper {
   font-weight: 700;
   text-transform: uppercase;
   -ms-flex-item-align: center;
-      align-self: center; }
+      align-self: center;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease; }
+
+.button:hover, .button__green:hover {
+  text-decoration: none; }
 
 .button__green {
   background-color: #16d428; }
@@ -144,3 +149,121 @@ header a.header__url:hover {
   color: white;
   font-size: 25px;
   font-weight: 100; }
+
+section {
+  padding: 50px 0; }
+  section header {
+    text-transform: uppercase; }
+    section header span {
+      color: #898e8f;
+      font-size: 10px;
+      display: inline-block; }
+    section header h1 {
+      color: black;
+      font-weight: 800;
+      font-size: 30px;
+      margin-bottom: 25px; }
+
+#about-us {
+  color: #898e8f; }
+  #about-us .button__green {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+  #about-us .about-us__medal-wrapper {
+    position: absolute;
+    height: 266px;
+    width: 228px;
+    top: 150px; }
+    #about-us .about-us__medal-wrapper img {
+      width: 100%;
+      height: 100%; }
+
+#steps {
+  background-color: #e7eff1; }
+  #steps .step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 280px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    #steps .step .step__image {
+      width: 60px;
+      height: 60px; }
+      #steps .step .step__image img {
+        width: 100%;
+        height: 100%; }
+    #steps .step p {
+      color: #898e8f; }
+    #steps .step .step__title {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 16px;
+      color: black; }
+    #steps .step .step__title::before {
+      content: attr(data-number);
+      display: block;
+      color: #16d428; }
+
+#projects .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #projects .project img {
+    width: 100%;
+    height: 100%; }
+  #projects .project .label {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    border: 2px solid #ffac55;
+    border-radius: 105px;
+    line-height: 20px;
+    padding: 5px 25px 5px 25px;
+    margin: 15px 0 0 15px;
+    text-transform: uppercase; }
+  #projects .project .plus-sign {
+    display: inline-block;
+    position: absolute;
+    background-size: 100%;
+    background-image: url("../img/blue-plus.png");
+    width: 35px;
+    height: 35px; }
+
+#projects .project:hover {
+  background-color: #ffac55; }
+  #projects .project:hover img {
+    opacity: 0; }
+  #projects .project:hover .plus-sign {
+    background-image: url("../img/orange-plus.png"); }
+  #projects .project:hover .label {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: inline-block;
+    border: none;
+    color: white;
+    padding: 0 15px;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase; }
+  #projects .project:hover .label:after {
+    content: "Lorem Ipsum is simply dummy text of the printing and...";
+    display: block;
+    font-size: 8px;
+    padding: inherit; }
+
+#projects .button__green {
+  margin-top: 40px; }
+
+#testimonials {
+  background-color: #03b6e7;
+  color: white; }
+  #testimonials header > span, #testimonials h1 {
+    color: white; }
