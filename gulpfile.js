@@ -1,10 +1,13 @@
 var gulp = require("gulp"),
   sass = require("gulp-sass"),
   imagemin = require("gulp-imagemin"),
+  imageminJpegRecompress = require("imagemin-jpeg-recompress"),
   del = require("del"),
   runSequence = require("run-sequence"),
   rename = require("gulp-rename"),
   cssnano = require("gulp-cssnano"),
+  htmlmin = require("gulp-htmlmin"),
+  uglify = require("gulp-uglify"),
   autoprefixer = require("gulp-autoprefixer");
 
 gulp.task("styles", function() {
@@ -19,18 +22,38 @@ gulp.task("styles", function() {
 });
 
 gulp.task("html", function() {
-  return gulp.src("app/*.html").pipe(gulp.dest("dist"));
+  return gulp
+    .src("app/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true, cssmin: true }))
+    .pipe(gulp.dest("dist"));
 });
 
 gulp.task("images", function() {
   return gulp
     .src("app/img/**/*.+(png|jpg|gif|svg)")
-    .pipe(imagemin())
+    .pipe(
+      imagemin(
+        [
+          imagemin.gifsicle({ interlaced: true }),
+          imageminJpegRecompress({
+            progressive: true,
+            method: "smallfry",
+            quality: "veryhigh"
+          }),
+          imagemin.optipng(),
+          imagemin.svgo({ plugins: [{ cleanupIDs: false }] })
+        ],
+        { verbose: true }
+      )
+    )
     .pipe(gulp.dest("dist/img"));
 });
 
 gulp.task("scripts", function() {
-  return gulp.src("app/js/**").pipe(gulp.dest("dist/js"));
+  return gulp
+    .src("app/js/**")
+    .pipe(uglify())
+    .pipe(gulp.dest("dist/js"));
 });
 
 gulp.task("clean:dist", function() {
@@ -43,7 +66,7 @@ gulp.task("build", function(callback) {
 
 gulp.task("watch", function() {
   gulp.watch("app/scss/**/_*.scss", ["styles"]);
-//   TODO define way to rebuild project after changing any scss file
+  //   TODO define way to rebuild project after changing any scss file
   gulp.watch("app/scss/**/style.scss", ["styles"]);
   gulp.watch("app/**/*.html", ["html"]);
 });
