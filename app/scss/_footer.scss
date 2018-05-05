@@ -1,0 +1,68 @@
+@import "colors";
+
+footer {
+  @extend section;
+  background-color: #262829;
+  color: white;
+
+  form {
+    text-transform: uppercase;
+    p {
+      color: $grey-text-color;
+      font-size: 10px;
+    }
+    input {
+      color: $grey-text-color;
+      background-color: #323334;
+      border-bottom-left-radius: 50px;
+      border-top-left-radius: 50px;
+      height: 45px;
+      border: none;
+      padding: 0 10px 0 29px;
+      width: 70%;
+    }
+    input:focus {
+      box-shadow: 0 0 0 2pt $grey-text-color;
+      outline: none;
+    }
+
+    .button__green {
+      position: absolute;
+      right: 105px;
+      height: 45px;
+      padding: 0;
+    }
+    .button__green:focus {
+      box-shadow: 0 0 0 2pt $grey-text-color;
+      outline: none;
+    }
+  }
+
+  .column {
+    .column__title {
+      font-size: 20px;
+    }
+    .column__items {
+      list-style: none;
+      margin: 20px 0 20px -40px;
+      a {
+        color: $grey-text-color;
+        transition: color 0.2s ease;
+      }
+      a:hover {
+        color: white;
+      }
+    }
+  }
+
+  .copyright::before {
+    content: "";
+    height: 1px;
+    border-top: 1px solid #323334;
+    width: 100%;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}

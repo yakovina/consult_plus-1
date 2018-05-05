@@ -1,5 +1,8 @@
 @import "colors";
 
+a:hover {
+  text-decoration: none;
+}
 section {
   header {
     text-transform: uppercase;
@@ -133,9 +136,106 @@ section {
 #testimonials {
   background-color: $blue-color;
   color: white;
-
-  header > span, h1 
-  {
-          color: white;
+  header > span,
+  h1 {
+    color: white;
+  }
+  .author {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    max-height: 80px;
+    .author__avatar {
+      max-height: 75px;
+      max-width: 75px;
+      img {
+        border-radius: 50%;
       }
+    }
+    span {
+        display: block;
+    }
+  }
+}
+
+#blog {
+  background-color: $grey-bg-color;
+  position: relative;
+  .posts__button {
+    color: $grey-text-color;
+    border: 2px $grey-text-color solid;
+    line-height: 45px;
+    display: inline;
+    border-radius: 15px;
+    padding: 5px 15px 7px 15px;
+    margin: 0 5px;
+    transition: border-color 0.2s ease;
+  }
+  .posts__button:hover {
+    border-color: $orange-color;
+  }
+
+  .post {
+    max-width: 90%;
+    margin: 15px 0 15px 0;
+    color: black;
+    display: block;
+    .post__date,
+    .post__title {
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+    .post__beginning {
+      color: $grey-text-color;
+    }
+  }
+  .post:hover {
+    .post__title {
+      color: $orange-color;
+    }
+  }
+}
+#blog:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+  width: 50%;
+  background-image: url("../img/man_on_mountain.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 992px) {
+  #blog:before {
+    display: none;
+  }
+}
+
+#contact-us {
+  .contact {
+    color: black;
+    border: 1px solid $grey-text-color;
+    min-height: 125px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: border-width 0.5s ease;
+    transition: border-color 0.5s ease;
+    .contact__title {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .contact__title::after {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+  .contact:hover {
+      border-color: $orange-color;
+      border-width: 2px;
+  }
 }

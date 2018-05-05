@@ -150,15 +150,18 @@ header a.header__url:hover {
   font-size: 25px;
   font-weight: 100; }
 
-section {
+a:hover {
+  text-decoration: none; }
+
+section, footer {
   padding: 50px 0; }
-  section header {
+  section header, footer header {
     text-transform: uppercase; }
-    section header span {
+    section header span, footer header span {
       color: #898e8f;
       font-size: 10px;
       display: inline-block; }
-    section header h1 {
+    section header h1, footer header h1 {
       color: black;
       font-weight: 800;
       font-size: 30px;
@@ -265,5 +268,141 @@ section {
 #testimonials {
   background-color: #03b6e7;
   color: white; }
-  #testimonials header > span, #testimonials h1 {
+  #testimonials header > span,
+  #testimonials h1 {
     color: white; }
+  #testimonials .author {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    max-height: 80px; }
+    #testimonials .author .author__avatar {
+      max-height: 75px;
+      max-width: 75px; }
+      #testimonials .author .author__avatar img {
+        border-radius: 50%; }
+    #testimonials .author span {
+      display: block; }
+
+#blog {
+  background-color: #e7eff1;
+  position: relative; }
+  #blog .posts__button {
+    color: #898e8f;
+    border: 2px #898e8f solid;
+    line-height: 45px;
+    display: inline;
+    border-radius: 15px;
+    padding: 5px 15px 7px 15px;
+    margin: 0 5px;
+    -webkit-transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease; }
+  #blog .posts__button:hover {
+    border-color: #ffac55; }
+  #blog .post {
+    max-width: 90%;
+    margin: 15px 0 15px 0;
+    color: black;
+    display: block; }
+    #blog .post .post__date,
+    #blog .post .post__title {
+      font-weight: bold;
+      -webkit-transition: color 0.2s ease;
+      transition: color 0.2s ease; }
+    #blog .post .post__beginning {
+      color: #898e8f; }
+  #blog .post:hover .post__title {
+    color: #ffac55; }
+
+#blog:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  bottom: 0;
+  width: 50%;
+  background-image: url("../img/man_on_mountain.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+@media (max-width: 992px) {
+  #blog:before {
+    display: none; } }
+
+#contact-us .contact {
+  color: black;
+  border: 1px solid #898e8f;
+  min-height: 125px;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: border-width 0.5s ease;
+  transition: border-width 0.5s ease;
+  -webkit-transition: border-color 0.5s ease;
+  transition: border-color 0.5s ease; }
+  #contact-us .contact .contact__title {
+    font-weight: 700;
+    text-transform: uppercase; }
+  #contact-us .contact .contact__title::after {
+    content: "\A";
+    white-space: pre; }
+
+#contact-us .contact:hover {
+  border-color: #ffac55;
+  border-width: 2px; }
+
+footer {
+  background-color: #262829;
+  color: white; }
+  footer form {
+    text-transform: uppercase; }
+    footer form p {
+      color: #898e8f;
+      font-size: 10px; }
+    footer form input {
+      color: #898e8f;
+      background-color: #323334;
+      border-bottom-left-radius: 50px;
+      border-top-left-radius: 50px;
+      height: 45px;
+      border: none;
+      padding: 0 10px 0 29px;
+      width: 70%; }
+    footer form input:focus {
+      -webkit-box-shadow: 0 0 0 2pt #898e8f;
+              box-shadow: 0 0 0 2pt #898e8f;
+      outline: none; }
+    footer form .button__green {
+      position: absolute;
+      right: 105px;
+      height: 45px;
+      padding: 0; }
+    footer form .button__green:focus {
+      -webkit-box-shadow: 0 0 0 2pt #898e8f;
+              box-shadow: 0 0 0 2pt #898e8f;
+      outline: none; }
+  footer .column .column__title {
+    font-size: 20px; }
+  footer .column .column__items {
+    list-style: none;
+    margin: 20px 0 20px -40px; }
+    footer .column .column__items a {
+      color: #898e8f;
+      -webkit-transition: color 0.2s ease;
+      transition: color 0.2s ease; }
+    footer .column .column__items a:hover {
+      color: white; }
+  footer .copyright::before {
+    content: "";
+    height: 1px;
+    border-top: 1px solid #323334;
+    width: 100%; }
+  footer .copyright {
+    font-size: 12px; }

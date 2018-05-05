@@ -38,7 +38,7 @@
             <div class="container">
                 <nav class="navbar navbar-light navbar-expand-md">
                     <div class="navbar-brand">
-                        <img class=image_max_size src="img/header-logo.png" alt="LOGO">
+                        <img src="img/header-logo.png" alt="LOGO">
                     </div>
                     <button class="navbar-toggler">
                         <span class=navbar-toggler-icon data-toggle=collapse data-target="#navMenu"></span>
@@ -231,79 +231,79 @@
                         </header>
                     </div>
                 </div>
-
                 <div class="row">
-                    <div class="col-lg-1">
+                    <div class="d-none d-md-block col-lg-1">
                         <img src="img/start_quote.png" alt="quote">
                     </div>
                     <div class="testimonials__carousel col-lg-10">
-                        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
                             type and scrambled it to make a type speci book. It has survived not only five centuries, but
                             also the leap into electronic typesetting, remaining essentially. unchanged.
-                        </div>
-                        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        </blockquote>
+                        <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
                             type and scrambled it to make a type speci book. It has survived not only five centuries, but
                             also the leap into electronic typesetting, remaining essentially. unchanged.
-                        </div>
-                        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        </blockquote>
+                        <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
                             type and scrambled it to make a type speci book. It has survived not only five centuries, but
                             also the leap into electronic typesetting, remaining essentially. unchanged.
-                        </div>
+                        </blockquote>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="d-none d-md-block col-lg-1">
                         <img src="img/end_quote.png" alt="quote">
                     </div>
                 </div>
-                <div class="row testimonials__carousel_nav col-lg-3 col-md-4 col-sm-6">
-                    <div class="quote_author align-items-center d-flex justify-content-between">
-                        <div class=avatar_wrapper>
+                <div class="row testimonials__carousel-nav col-lg-3 col-md-4 col-sm-6">
+                    <div class="author align-items-center d-flex justify-content-between">
+                        <div class=author__avatar>
                             <img src="img/man_photo.png" alt="the man">
                         </div>
                         <div>
-                            <div class=quote_author__client-name>Client Name</div>
-                            <div class=quote_author__client-designation>Designation</div>
+                            <span>The Man</span>
+                            <span>Designation</span>
                         </div>
                     </div>
-                    <div class="quote_author align-items-center d-flex justify-content-between">
-                        <div class=avatar_wrapper>
-                            <img src="img/girl1_photo.png" alt="the man">
+                    <div class="author align-items-center d-flex justify-content-between">
+                        <div class=author__avatar>
+                            <img src="img/girl1_photo.png" alt="girl one">
                         </div>
                         <div>
-                            <div class=quote_author__client-name>Client Name</div>
-                            <div class=quote_author__client-designation>Designation</div>
+                            <span>Girl One</span>
+                            <span>Designation</span>
                         </div>
                     </div>
-                    <div class="quote_author align-items-center d-flex justify-content-between">
-                        <div class=avatar_wrapper>
-                            <img src="img/girl2_photo.png" alt="the man">
+                    <div class="author align-items-center d-flex justify-content-between">
+                        <div class=author__avatar>
+                            <img src="img/girl2_photo.png" alt="girl two">
                         </div>
                         <div>
-                            <div class=quote_author__client-name>Client Name</div>
-                            <div class=quote_author__client-designation>Designation</div>
+                            <span>Girl two</span>
+                            <span>Designation</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class='blog section bg-grey'>
+        <section id='blog'>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="row d-flex">
-                            <div>
-                                <div class="section-description">News</div>
-                                <div class='section-title'>Our blog</div>
-                            </div>
-                            <span class="posts_button">
-                                <a href="" class="posts_button">top posts</a>
-                            </span>
-                            <span class="posts_button">
-                                <a href="" class="posts_button">check all posts</a>
-                            </span>
-                        </div>
+                    <div class="col-lg-2 col-md-6">
+                        <header>
+                            <span>News</span>
+                            <h1>Our blog</h1>
+                        </header>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#" class="posts__button">top posts</a>
+                        <a href="#" class="posts__button">check all posts</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
                         <a href=# class="post">
                             <div class="post__date">February 20, 2016</div>
                             <div class="post__title">Blog heading here business</div>
@@ -329,62 +329,62 @@
                 </div>
             </div>
         </section>
-        <section class='contact-us section' id=contact-us>
+        <section id=contact-us>
             <div class="container">
                 <div class="row">
-                    <div>
-                        <div class="section-description">For consulting</div>
-                        <div class='section-title'>Contact Us</div>
+                    <div class="col-6">
+                        <header>
+                            <span>For consulting</span>
+                            <h1>Contact Us</h1>
+                        </header>
                     </div>
 
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="contact__item">
+                        <a href="mail:info@consultplus.com" class="contact">
                             <img src="img/mail.png" alt="email">
                             <div>
                                 <span class="contact__title">Email</span>
                                 <span class="contact__body">info@consultplus.com</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-4">
-                        <div class="contact__item">
+                        <a href="tel:+9188798767990" class="contact">
                             <img src="img/phone.png" alt="phone">
                             <div>
                                 <span class="contact__title">Call us</span>
                                 <span class="contact__body">+91 8879 8767 990</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-4">
-                        <div class="contact__item">
+                        <a href="mail:consult@career.com" class="contact">
                             <img src="img/career.png" alt="career">
                             <div>
                                 <span class="contact__title">Career</span>
                                 <span class="contact__body">consult@career.com</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="footer section">
+        <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 footer__subscription">
-                        <div>
-                            <div class='section-title'>News letter</div>
-                            <div class="section-description">Enter your email address to subscribe our notification of our new post & features by email.</div>
-                        </div>
-                        <div class=input__wrapper>
-                            <input type="text" placeholder="email">
-                            <button class='btn-success success__button input__button'>Subscribe</button>
-                        </div>
+                    <div class="col-lg-6">
+                        <form>
+                            <h4>News letter</h4>
+                            <p>Enter your email address to subscribe our notification of our new post & features by email.</p>
+                            <input type="email" placeholder="email">
+                            <button class='btn-success button__green'>Subscribe</button>
+                        </form>
                     </div>
                     <div class="col-lg-6">
                         <div class="row">
-                            <div class="col-4 footer-column">
+                            <div class="col-4 column">
                                 <div class="column__title">Navigation</div>
                                 <ul class=column__items>
                                     <li>
@@ -407,7 +407,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-4 footer-column">
+                            <div class="col-4 column">
                                 <div class="column__title">Industry</div>
                                 <ul class=column__items>
                                     <li>
@@ -433,7 +433,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-4 footer-column">
+                            <div class="col-4 column">
                                 <div class="column__title">Follow us</div>
                                 <ul class=column__items>
                                     <li>
@@ -460,8 +460,7 @@
                     <span class='grey-text text'>Copyright © 2016 Consultplus theme.</span>
                 </div>
             </div>
-
-        </section>
+        </footer>
     </div>
 
 

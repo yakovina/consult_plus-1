@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".testimonials__carousel_nav").slick({
+  $(".testimonials__carousel-nav").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -14,6 +14,6 @@ $(".testimonials__carousel").slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000,
-  asNavFor: ".testimonials__carousel_nav",
+  asNavFor: ".testimonials__carousel-nav",
   arrows: false
 });
