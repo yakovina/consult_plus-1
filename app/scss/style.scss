@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 div.wrapper {
-  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 
-@import "buttons";
+div.wrapper * {
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease;
+}
 
+@import "buttons";
 @import "header";
 @import "top";
 @import "content";

@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 div.wrapper {
-  font-family: "Montserrat", sans-serif;
   overflow-x: hidden; }
+
+div.wrapper * {
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .button, .button__green {
   display: inline-block;
@@ -30,6 +34,9 @@ header .header__contacts {
   display: inline-block;
   padding: 11px 0; }
 
+header .header__contacts a b {
+  color: white; }
+
 header .header__contacts:first-of-type {
   margin-right: 9px; }
 
@@ -52,7 +59,7 @@ header a.header__url {
   transition: color 0.2s ease;
   padding: 45px 0; }
 
-header a.header__url:hover {
+header a:hover {
   color: #ffac55 !important; }
 
 .top::after {
@@ -156,7 +163,7 @@ a:hover {
   text-decoration: none; }
 
 section, footer {
-  padding: 50px 0; }
+  padding: 70px 0; }
   section header, footer header {
     text-transform: uppercase; }
     section header span, footer header span {
@@ -168,6 +175,9 @@ section, footer {
       font-weight: 800;
       font-size: 30px;
       margin-bottom: 25px; }
+  @media (max-width: 992px) {
+    section .row .col-lg-6 .col-6, footer .row .col-lg-6 .col-6 {
+      margin: 15px 0; } }
 
 #about-us {
   color: #898e8f; }

@@ -9,6 +9,11 @@ header {
     display: inline-block;
     padding: 11px 0;
   }
+
+  .header__contacts a b{
+    color: white;
+    // border-bottom: 1px solid white;
+  }
   .header__contacts:first-of-type {
     margin-right: 9px;
   }
@@ -34,7 +39,7 @@ header {
     padding: 45px 0;
   }
 
-  a.header__url:hover {
+  a:hover {
     color: $orange-color !important;
   }
 }
